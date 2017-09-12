@@ -7,6 +7,6 @@ object Proj1Content {
   val message = "This is sub project 1."
   def test():String = {
     val d:Encoder = new Base64()
-    d.encode(message).toString
+    d.encode(message.getBytes).toString
   }
 }
